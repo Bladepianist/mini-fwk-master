@@ -8,3 +8,5 @@ Inclus les librairies suivantes:
 	- moteur de template SMARTY
 	- framework Twitter Bootstrap (3)
 	- jquery/jqueryUI
+
+Framework Réalisé par David DURAND : https://github.com/d-durand/mini-fwk
