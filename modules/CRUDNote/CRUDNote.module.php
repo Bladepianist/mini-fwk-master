@@ -25,9 +25,9 @@ class CRUDNote extends Module{
 		$f=new Form("?module=CRUDNote&action=valide&mod=modifier&id=".$id,"form update"); //OK
 		$f->add_text("valeurNote","valeurNote","Note")-> set_required(); //OK
 		$f->add_text("dateNote","dateNote","Date d'obtention")-> set_required(); //OK
-		$f->add_select("idControle", "idControle", "Type de Contrôle", ControleManager::listerControle())-> set_required(); //OK
+		$f->add_select("idControle", "idControle", "Type de Contrôle", ControleManager::listerControle2())-> set_required(); //OK
 		$f->add_select("idUtilisateur","idUtilisateur","Utilisateur concerné", UtilisateurManager::listerUtilisateur2()) -> set_required(); // A coder (idem que Lister Departement)
-		$f->add_select("idMatiere", "idMatiere", "Matière", MatiereManager::listerMatiere())-> set_required(); // OK
+		$f->add_select("idMatiere", "idMatiere", "Matière", MatiereManager::listerMatiere2())-> set_required(); // OK
 		$f->add_submit("Valider","bntval")->set_value('Modifier');		
 		
 		// Remet les valeurs d'origine (pré-remplissage)
@@ -206,9 +206,9 @@ class CRUDNote extends Module{
             $f=new Form("?module=CRUDNote&action=valide&mod=ajouter&id=".$id,"form ajout"); //OK
             $f->add_text("valeurNote","valeurNote","Note")-> set_required(); //OK
             $f->add_text("dateNote","dateNote","Date d'obtention")-> set_required(); //OK
-            $f->add_select("idControle", "idControle", "Type de Contrôle", ControleManager::listerControle())-> set_required(); //OK
+            $f->add_select("idControle", "idControle", "Type de Contrôle", ControleManager::listerControle2())-> set_required(); //OK
             $f->add_select("idUtilisateur","idUtilisateur","Utilisateur concerné", UtilisateurManager::listerUtilisateur2()) -> set_required(); // A coder (idem que Lister Departement)
-            $f->add_select("idMatiere", "idMatiere", "Matière", MatiereManager::listerMatiere())-> set_required(); // OK
+            $f->add_select("idMatiere", "idMatiere", "Matière", MatiereManager::listerMatiere2())-> set_required(); // OK
             $f->add_submit("Valider","bntval")->set_value('Valider');
 
             // on peut pré-remplir le formulaire avec des valeurs par défaut

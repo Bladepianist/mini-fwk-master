@@ -29,10 +29,10 @@ class CRUDUtilisateur extends Module{
 		$f->add_text("emailUtilisateur","emailutilisateur","Email")-> set_required(); //OK	
 		$f->add_password("password","password","Mot de passe")-> set_required(); //OK
 		$f->add_password("passwordVerif","passwordVerif","Mot de passe")-> set_required(); //OK
-		$f->add_select("idDepartement", "idDepartement", "Département", DepartementManager::listerDepartement())-> set_required(); //OK
-		$f->add_select("idStatutUtilisateur", "idStatutUtilisateur", "Statut de l'Utilisateur", StatutUtilisateurManager::listerStatutUtilisateur())-> set_required(); //OK
-		$f->add_select("idNiveauUtilisateur","idNiveauUtilisateur","Niveau d'Etude", NiveauUtilisateurManager::listerNiveauUtilisateur()) -> set_required(); // OK
-		$f->add_select("idGroupeUtilisateur", "idGroupeUtilisateur", "Spécialisation", GroupeUtilisateurManager::listerGroupeUtilisateur())-> set_required(); //idem que ci-dessus
+		$f->add_select("idDepartement", "idDepartement", "Département", DepartementManager::listerDepartement2())-> set_required(); //OK
+		$f->add_select("idStatutUtilisateur", "idStatutUtilisateur", "Statut de l'Utilisateur", StatutUtilisateurManager::listerStatutUtilisateur2())-> set_required(); //OK
+		$f->add_select("idNiveauUtilisateur","idNiveauUtilisateur","Niveau d'Etude", NiveauUtilisateurManager::listerNiveauUtilisateur2()) -> set_required(); // OK
+		$f->add_select("idGroupeUtilisateur", "idGroupeUtilisateur", "Spécialisation", GroupeUtilisateurManager::listerGroupeUtilisateur2())-> set_required(); //idem que ci-dessus
 		// Traitement AJAX. Filtrer en fonction du Département choisi
 		$f->add_submit("Valider","bntval")->set_value('Modifier');		
 		
@@ -306,10 +306,10 @@ class CRUDUtilisateur extends Module{
 		$f->add_text("emailUtilisateur","emailutilisateur","Email")-> set_required(); //OK	
 		$f->add_password("password","password","Mot de passe")-> set_required(); //OK
 		$f->add_password("passwordVerif","passwordVerif","Saisir de nouveau votre mot de passe")-> set_required(); //OK		
-		$f->add_select("idDepartement", "idDepartement", "Département", DepartementManager::listerDepartement())-> set_required(); //OK
-		$f->add_select("idNiveauUtilisateur","idNiveauUtilisateur","Niveau d'Etude", NiveauUtilisateurManager::listerNiveauUtilisateur()) -> set_required(); // OK
-		$f->add_select("idGroupeUtilisateur", "idGroupeUtilisateur", "Spécialisation", GroupeUtilisateurManager::listerGroupeUtilisateur())-> set_required(); //idem que ci-dessus
-                $f->add_select("idStatutUtilisateur", "idStatutUtilisateur", "Statut de l'utilisateur", StatutUtilisateurManager::listerStatutUtilisateur())-> set_required(); //idem que ci-dessus
+		$f->add_select("idDepartement", "idDepartement", "Département", DepartementManager::listerDepartement2())-> set_required(); //OK
+		$f->add_select("idNiveauUtilisateur","idNiveauUtilisateur","Niveau d'Etude", NiveauUtilisateurManager::listerNiveauUtilisateur2()) -> set_required(); // OK
+		$f->add_select("idGroupeUtilisateur", "idGroupeUtilisateur", "Spécialisation", GroupeUtilisateurManager::listerGroupeUtilisateur2())-> set_required(); //idem que ci-dessus
+                $f->add_select("idStatutUtilisateur", "idStatutUtilisateur", "Statut de l'utilisateur", StatutUtilisateurManager::listerStatutUtilisateur2())-> set_required(); //idem que ci-dessus
 		$f->add_submit("Valider","bntval")->set_value('Valider');		
 
 		// on peut pré-remplir le formulaire avec des valeurs par défaut

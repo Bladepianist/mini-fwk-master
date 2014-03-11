@@ -1,4 +1,4 @@
-<?php /* Smarty version Smarty-3.1.1, created on 2014-02-26 00:55:05
+<?php /* Smarty version Smarty-3.1.1, created on 2014-03-11 19:13:24
          compiled from "modules\CRUDArticle\tpl\index.tpl" */ ?>
 <?php /*%%SmartyHeaderCode:621953028b55cfef21-40056294%%*/if(!defined('SMARTY_DIR')) exit('no direct access allowed');
 $_valid = $_smarty_tpl->decodeProperties(array (
@@ -7,7 +7,7 @@ $_valid = $_smarty_tpl->decodeProperties(array (
     'c080fb35e82c033fd7bf58223af52c3327e453c9' => 
     array (
       0 => 'modules\\CRUDArticle\\tpl\\index.tpl',
-      1 => 1393372503,
+      1 => 1393959241,
       2 => 'file',
     ),
   ),
@@ -121,7 +121,7 @@ if (!$_smarty_tpl->tpl_vars['donnees']->_loop) {
         <h4 class="modal-title" id="myModalLabel">Confirmation</h4>
       </div>
       <div class="modal-body">
-        Êtes vous sûr de vouloir supprimer cet utilisateur ? 
+        Êtes vous sûr de vouloir supprimer cet article ? 
       </div>
       <div class="modal-footer">
         <a href="#" class="btn btn-default" data-dismiss="modal">Fermer</a>

@@ -26,9 +26,9 @@
 		
 		public  function modifierMatiere($m, $idMatiere){
 			
-			$sql = "UPDATE Matiere SET nomMatiere = ?, coeffMatiere = ?, idUE = ?";
+			$sql = "UPDATE Matiere SET nomMatiere = ?, coeffMatiere = ?, idUE = ? WHERE idMatiere = ?";
 			$res = DB::get_instance()->prepare($sql);
-			$res -> execute(array($m->nomMatiere, $m->coeffMatiere, $m->idUE));
+			$res -> execute(array($m->nomMatiere, $m->coeffMatiere, $m->idUE, $idMatiere));
 			return $m;
 			
 		}
